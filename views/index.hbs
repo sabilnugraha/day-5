@@ -1,0 +1,228 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="/public/my project/myproject.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+         <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
+    </head>
+    <body style="background-color: rgb(224, 222, 222)">
+
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+            <div class="container-fluid">
+              <a class="navbar-brand me-5" href="#"><img src="/public/dw.png"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                           {{#if isLogin}}
+                    <a class="nav-link" href="/myproject">Add My Project</a>
+                    {{/if}}
+                  </li>
+                </ul>
+                <div class="d-flex align-items-center justify-content-center mt-0">
+{{#if isLogin}}
+                    <a class = "register m-4" href="#">Hallo, {{user.nama}}</a>
+                    <a class="login me-4" href="/logout">Logout</a>    
+                {{else}}
+                    <a href="/register" class="register me-4">Register</a>
+                 <a href="/login" class="login me-4">Log in</a>
+                {{/if}}
+                 <a href="contact" class="btn-mycontact">My Contact</a>
+                </div>
+              </div>
+            </div>
+          </nav>
+
+
+ 
+
+        <div   class="content-home">
+        
+            <div class="d-flex-fluid justify-content-center align-items-center"
+            style="
+            margin-top:200px;
+            ">
+            
+                <div class="card-box" style="
+                    border: whitesmoke 3px solid;
+                    padding: 25px;
+                    max-width:1000px;
+                    height: 420px;
+                    box-shadow: 2px 5px 10px grey;
+                    display: flex;
+                    min-width: 1px;
+                    justify-content: center;
+                    margin: auto;
+                    background-color: white;
+            "
+            >
+                    <div class=" left-box me-3" style="
+                    padding: 5px;
+                    min-width: 10px;
+                    margin-bottom: auto;">
+                        <h2 style="text-align: left;">Hi Welcome to my hut</h2>
+                        <p style="text-align: justify;">{Lorem ipsum dolor 
+                          sit amet, re et dolore magna aliqua. Ut enim ad minim v
+                          eniam, quis nostrud exercitation ullamco laboris nisi 
+                          ut aliquip ex ea commodo consequat. Duis aute irure 
+                          dolor in reprehenderit in voluptate velit esse cillum
+                           dolore eu fugiat nulla pariatur. Excepteur sint occae
+                           cat cupidatat non proident, sunt in culpa qui officia 
+                           deserunt mollit anim id est laborum.}</p>
+                    <br><br>
+                    <button href="../contact/contact.html" style="
+                        border-radius: 25px;
+                        color: white;
+                        background-color: black;
+                        padding: 5px 24px">contact</button>
+                        
+                        <a href="https://usaupload.com/6eMA/cv_.pdf" download="cv.pdf" style="margin-left: 20px; text-decoration: none; color: black;">download CV <img src="/public/download.png" style="width: 15px"></a>
+                            
+                            <br><br><br>
+                                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+                                <a href="https://id.linkedin.com/in/fisabila-nugraha-ahmad-2212841b9?trk=public_profile_browsemap" class="fa fa-linkedin" style="
+                                background:black;
+                                color:white;
+                                border-radius: 50%;
+                                padding: 6px;
+                                text-decoration: none;
+                                font-size: large;
+                                "></a>
+                                <a href="#" class="fa fa-instagram" style="
+                                background:black;
+                                color:white;
+                                border-radius: 50%;
+                                padding: 6px;
+                                text-decoration: none;
+                                margin-left: 20px;
+                                font-size: large;
+                                "></a>
+                                <a href="#" class="fa fa-facebook" style="
+                                background:black;
+                                color:white;
+                                border-radius: 50%;
+                                padding-left: 12px;
+                                padding-right: 12px;
+                                padding: 6px;
+                                text-decoration: none;
+                                font-size: large;
+                                margin-left: 20px;
+                                "></a>
+                                <a href="#" class="fa fa-twitter" style="
+                                background:black;
+                                color:white;
+                                border-radius: 50%;
+                                padding: 6px;
+                                text-decoration: none;
+                                font-size: large;
+                                margin-left: 20px;
+                                "></a>
+                            
+                    </div>
+                
+            
+            
+
+                    <div class="right-box">
+                    <div class="content mt-2" style="
+                    border: white;
+                    box-shadow: 2px 5px 15px;
+                    width: 250px;
+                    height: 330px;
+                    ">
+                    <img src="/public/sabil.jpeg"
+                    style="
+                    height: 250px;">
+                    <br>
+                    <p style="
+                    width:auto;
+                    padding:10px;
+                    text-align:center;
+                    text-decoration: solid;
+                    "><strong>FISABILA NUGRAHA AHMAD</strong><br> Fullstack Developer</p>
+                    
+                    <br>
+                
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+    <h2 style="
+        text-align:center;
+        margin-top: 10px;
+        padding-top: 50px;
+        ">MY PROJECT</h2>
+
+<div id="content" class="d-flex flex-wrap justify-content-center align-items-center p-5">   
+  {{#each projects}}
+ <div class="card m-3" style="
+          width: 18rem;
+          box-shadow: 1px 1px 3px;">
+          <img src="/uploads/{{this.image}}" alt="" class="card-img-top p-3" alt="...">
+          <div class="card-body">
+            <h5>
+    <span><a href="project-detail/{{this.id}}" target="_blank"
+      >{{this.title}}</a
+    > - {{this.year}} </span>
+  </h5>
+
+  <h6>Durasi {{this.durasi}}
+  </h6>
+
+            <p style="margin-top: 25px;" class="card-text">{{this.description}}</p>
+<script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
+            <div class="bottom">
+              <div class="icon" style="
+              margin-left:3%;">
+              {{#each technologies}}
+
+              <i class="iconify" data-icon="cib:{{this}}"></i>
+             
+              {{/each}}
+
+              </div>
+{{#if isLogin}}
+          <div class="d-flex justify-content-center align-items-center mt-2" >
+            <a href="myproject-edit/{{this.id}}" class="btn-left me-1" style="
+            width: 160px;">Edit</a>
+            <a href="/delete-project/{{this.id}}" class="btn-right ms-1"
+            style="
+            width: 160px;"
+            >Delete</a>
+          </div>
+ {{/if}}         
+
+          </div>
+        </div>
+
+    </div>   
+    {{/each}}
+</div> 
+
+
+    
+            
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    </body>
+    
+
+
+
+
+
+
+
+
+
+
+
+    
+</html>
